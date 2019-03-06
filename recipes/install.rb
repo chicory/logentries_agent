@@ -23,7 +23,7 @@ case node['platform']
       distribution node['lsb']['codename']
       components ['main']
       keyserver node['le']['pgp_key_server']
-      key 'C43C79AD'
+      key 'A5270289C43C79AD'
     end
   when 'centos', 'redhat', 'amazon', 'scientific'
     yum_repository 'logentries' do
@@ -38,7 +38,7 @@ case node['platform']
       distribution node['le']['deb']
       components ['main']
       keyserver node['le']['pgp_key_server']
-      key 'C43C79AD'
+      key 'A5270289C43C79AD'
     end
 end
 #TODO: do something different (or nothing?) for Red Hat?
